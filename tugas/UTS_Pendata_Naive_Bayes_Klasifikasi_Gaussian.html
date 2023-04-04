@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UTS PENAMBANGAN DATA &#8212; pendata</title>
+    <title>UTS PENAMBANGAN DATA Naive Bayes Klasifikasi &#8212; pendata</title>
   
   
   
@@ -63,6 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas/UTS_Pendata_Naive_Bayes_Klasifikasi_Gaussian';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="UTS PENAMBANGAN DATA KNN Klasifikasi" href="UTS_Pendata_KNN_Klasifikasi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,10 +154,11 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Menghitung_Jarak_Data_%28Tugas_2%29.html">Menghitung Jarak Data (Tugas 2)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas3_pendat.html">Klasifikasi Naive Bayes Pada Dataset Iris (Tugas 3)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS_Pendata_KNN_Klasifikasi.html">UTS PENAMBANGAN DATA KNN Klasifikasi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UTS PENAMBANGAN DATA Naive Bayes Klasifikasi</a></li>
 </ul>
 
     </div>
@@ -338,7 +340,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>UTS PENAMBANGAN DATA</h1>
+    <h1>UTS PENAMBANGAN DATA Naive Bayes Klasifikasi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -352,8 +354,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="uts-penambangan-data">
-<h1>UTS PENAMBANGAN DATA<a class="headerlink" href="#uts-penambangan-data" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="uts-penambangan-data-naive-bayes-klasifikasi">
+<h1>UTS PENAMBANGAN DATA Naive Bayes Klasifikasi<a class="headerlink" href="#uts-penambangan-data-naive-bayes-klasifikasi" title="Permalink to this heading">#</a></h1>
 <p>Nama : Hamam Mubarok Al Hadad</p>
 <p>NIM : 210411100060</p>
 <p>Kelas : C</p>
@@ -389,7 +391,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-445748f6-0e66-4eda-8cfe-2d468987a25b">
+  <div id="df-e1caf34b-18ea-4595-bdff-bc06e15f9498">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -617,7 +619,7 @@ document.write(`
 </table>
 <p>303 rows × 14 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-445748f6-0e66-4eda-8cfe-2d468987a25b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e1caf34b-18ea-4595-bdff-bc06e15f9498')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -668,12 +670,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-445748f6-0e66-4eda-8cfe-2d468987a25b button.colab-df-convert');
+          document.querySelector('#df-e1caf34b-18ea-4595-bdff-bc06e15f9498 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-445748f6-0e66-4eda-8cfe-2d468987a25b');
+          const element = document.querySelector('#df-e1caf34b-18ea-4595-bdff-bc06e15f9498');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -813,7 +815,7 @@ memory usage: 33.3 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-619b5b94-0690-4351-ac8f-96a0d331ca65">
+  <div id="df-e10a9938-81a5-4e30-bd0f-73de577ae13e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1041,7 +1043,7 @@ memory usage: 33.3 KB
 </table>
 <p>303 rows × 14 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-619b5b94-0690-4351-ac8f-96a0d331ca65')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e10a9938-81a5-4e30-bd0f-73de577ae13e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1092,12 +1094,12 @@ memory usage: 33.3 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-619b5b94-0690-4351-ac8f-96a0d331ca65 button.colab-df-convert');
+          document.querySelector('#df-e10a9938-81a5-4e30-bd0f-73de577ae13e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-619b5b94-0690-4351-ac8f-96a0d331ca65');
+          const element = document.querySelector('#df-e10a9938-81a5-4e30-bd0f-73de577ae13e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1205,6 +1207,15 @@ memory usage: 33.3 KB
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="UTS_Pendata_KNN_Klasifikasi.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">UTS PENAMBANGAN DATA KNN Klasifikasi</p>
+      </div>
+    </a>
 </div></div>
   
 </div>
