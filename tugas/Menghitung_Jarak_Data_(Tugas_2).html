@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Klasifikasi Naive Bayes Pada Dataset Iris (Tugas 3)" href="Tugas3_pendat.html" />
-    <link rel="prev" title="Tugas Mata Kuliah Penambangan Data" href="../intro.html" />
+    <link rel="prev" title="Mengambil Data Dari Database Yang Berbeda Dan Menggabungkanya (Tugas 1)" href="Mengambil_Data_Dari_Database_Yang_Berbeda_Dan_Menggabungkanya_%28Tugas_1%29.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -156,8 +156,12 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Mengambil_Data_Dari_Database_Yang_Berbeda_Dan_Menggabungkanya_%28Tugas_1%29.html">Mengambil Data Dari Database Yang Berbeda Dan Menggabungkanya (Tugas 1)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Menghitung Jarak Data (Tugas 2)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas3_pendat.html">Klasifikasi Naive Bayes Pada Dataset Iris (Tugas 3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS_Pendata_KNN_Klasifikasi.html">UTS PENAMBANGAN DATA KNN Klasifikasi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS_Pendata_Naive_Bayes_Klasifikasi_Gaussian.html">UTS PENAMBANGAN DATA Naive Bayes Klasifikasi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Decision_Tree_pada_Data_Iris.html">Decision Tree pada Data Iris (Tugas 4)</a></li>
 </ul>
 
     </div>
@@ -363,10 +367,10 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: pandas in /usr/local/lib/python3.9/dist-packages (1.4.4)
-Requirement already satisfied: numpy&gt;=1.18.5 in /usr/local/lib/python3.9/dist-packages (from pandas) (1.22.4)
-Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2022.7.1)
+Requirement already satisfied: pandas in /usr/local/lib/python3.9/dist-packages (1.5.3)
 Requirement already satisfied: python-dateutil&gt;=2.8.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2022.7.1)
+Requirement already satisfied: numpy&gt;=1.20.3 in /usr/local/lib/python3.9/dist-packages (from pandas) (1.22.4)
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil&gt;=2.8.1-&gt;pandas) (1.16.0)
 </pre></div>
 </div>
@@ -383,7 +387,7 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-pack
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ad5e952d-e409-4a0c-83f1-aa336abb8008">
+  <div id="df-013d87ba-4237-4015-aaaa-7d79dccde9c2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -451,7 +455,7 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-pack
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ad5e952d-e409-4a0c-83f1-aa336abb8008')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-013d87ba-4237-4015-aaaa-7d79dccde9c2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -502,12 +506,12 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-pack
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ad5e952d-e409-4a0c-83f1-aa336abb8008 button.colab-df-convert');
+          document.querySelector('#df-013d87ba-4237-4015-aaaa-7d79dccde9c2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ad5e952d-e409-4a0c-83f1-aa336abb8008');
+          const element = document.querySelector('#df-013d87ba-4237-4015-aaaa-7d79dccde9c2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -595,12 +599,12 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-pack
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="Mengambil_Data_Dari_Database_Yang_Berbeda_Dan_Menggabungkanya_%28Tugas_1%29.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tugas Mata Kuliah Penambangan Data</p>
+        <p class="prev-next-title">Mengambil Data Dari Database Yang Berbeda Dan Menggabungkanya (Tugas 1)</p>
       </div>
     </a>
     <a class="right-next"
